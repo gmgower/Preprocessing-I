@@ -134,3 +134,34 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 880px;
+  border: 1px solid red;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 36px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 1.6rem;
+  width: 69%;
+}
+header nav a {
+  color: gray;
+  text-decoration: none;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
