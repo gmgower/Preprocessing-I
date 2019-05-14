@@ -140,16 +140,18 @@ html {
 body {
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 .container {
   max-width: 880px;
   border: 1px solid red;
+  height: 100%;
 }
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 36px 2px 40px ;
+  margin: 36px 2px 40px;
 }
 header nav {
   display: flex;
@@ -166,6 +168,9 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
+.home-container {
+  margin-bottom: 10rem;
+}
 .home-container h1 {
   font-size: 6rem;
   margin-top: 10px;
@@ -173,4 +178,55 @@ header nav a:hover {
 .home-container h2 {
   font-size: 2rem;
   padding: 0.2rem 1rem;
+  margin-bottom: 2rem;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.about-container h1 {
+  font-size: 4rem;
+}
+.about-container h2 {
+  font-size: 2rem;
+}
+.about-container figure {
+  background-image: url(/img/header-img.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  width: 100%;
+  height: 225px;
+  position: relative;
+  margin-left: 10rem;
+}
+.about-container .bio {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 3rem 3rem 3rem;
+}
+.about-container .bio-text {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+}
+.projects-container .project-header {
+  background: red;
+  margin: 1rem;
+  width: 100%;
+}
+.projects-container .project-items {
+  background: greenyellow;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  height: 100px;
+}
+.projects-container .project-item {
+  padding: 1rem;
 }
