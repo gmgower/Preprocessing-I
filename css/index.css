@@ -153,7 +153,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 3.6rem 1rem 30rem;
+  margin: 3.6rem 1rem 50rem;
 }
 header nav {
   display: flex;
@@ -193,12 +193,17 @@ header nav a:hover {
   padding: 0.2rem 1rem;
   margin-left: 2rem;
 }
+@media (max-width: 500px) {
+  .home-container {
+    margin-top: 50rem;
+  }
+}
 #about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top: 70rem;
+  margin-top: 100rem;
   margin-bottom: 2rem;
 }
 #about-container h1 {
@@ -229,6 +234,11 @@ header nav a:hover {
   padding: 1rem;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  #about-container {
+    padding-top: 15rem;
+  }
+}
 .work-container {
   display: flex;
   flex-direction: row;
@@ -240,15 +250,21 @@ header nav a:hover {
   padding: 1rem 3rem 1rem 1rem;
 }
 .work-container h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 .work-container h6 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .work-container p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+}
+.work-container ul {
+  list-style-type: circle;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
 }
 @media (max-width: 500px) {
   .work-container {
@@ -318,6 +334,11 @@ header nav a:hover {
   #projects-container .project-items {
     flex-direction: column;
     margin-top: 10rem;
+    justify-content: center;
+    align-content: center;
+  }
+  .project-header {
+    padding-top: 30rem;
   }
 }
 #contact-container {

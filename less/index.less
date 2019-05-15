@@ -151,18 +151,17 @@ body {
 // End Variables
 
 // Start of Mixins
-.my-hover(){
-&:hover {
-      background-color: blue;
-}
+.my-hover() {
+  &:hover {
+    background-color: blue;
+  }
 }
 
 .mb {
   margin-bottom: 50rem;
 }
+
 // End of Mixins
-
-
 
 html {
   font-size: 62.5%;
@@ -184,7 +183,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 3.6rem 1rem 30rem;
+  margin: 3.6rem 1rem 50rem;
 
   nav {
     display: flex;
@@ -211,7 +210,6 @@ header {
 // Start Home Section
 .home-container {
   .mb;
-  // margin-bottom: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,7 +233,13 @@ header {
     padding: 0.2rem 1rem;
     margin-left: 2rem;
   }
+
+  @media (max-width: 500px) {
+    margin-top: 50rem;
+
+  }
 }
+
 // End Home Section
 
 //Start About Section
@@ -244,7 +248,7 @@ header {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top: 70rem;
+  margin-top: 100rem;
   margin-bottom: 2rem;
 
   h1 {
@@ -279,12 +283,17 @@ header {
     padding: 1rem;
     font-size: 2rem;
   }
+
+  @media (max-width: 500px) {
+    padding-top: 15rem;
+  }
 }
+
 //End About Section;;
 
 // Start Work Section
 .work-container {
-  display: flex;  
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -296,26 +305,31 @@ header {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
 
   h6 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
-    @media (max-width: 500px) {
-        flex-direction: column;
-        width: 90%;
-    }
+  ul {
+    list-style-type: circle;
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 90%;
+  }
 }
-
-
 // End Work Section
 
 // Start Projects Section
@@ -346,8 +360,8 @@ header {
 
   .project-items {
     display: flex;
-     justify-content: space-around;
-    flex-direction: row;   
+    justify-content: space-around;
+    flex-direction: row;
     width: 100%;
     margin: 1rem;
     height: 225px;
@@ -389,12 +403,18 @@ header {
   }
 }
 
-      @media (max-width: 500px) {
-        #projects-container .project-items {
-          flex-direction: column;
-          margin-top: 10rem;
-        }
-      }
+@media (max-width: 500px) {
+  #projects-container .project-items {
+    flex-direction: column;
+    margin-top: 10rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .project-header {
+    padding-top: 30rem;
+  }
+}
 
 
 
