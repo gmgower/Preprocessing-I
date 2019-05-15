@@ -144,55 +144,71 @@ body {
 }
 .container {
   max-width: 880px;
-  border: 1px solid red;
   height: 100%;
 }
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 36px 2px 40px;
+  margin: 3.6rem 1rem 30rem;
 }
 header nav {
   display: flex;
   justify-content: space-between;
   color: gray;
   font-size: 1.6rem;
+  position: fixed;
 }
 header nav a {
   color: gray;
   text-decoration: none;
   margin: 0rem 1rem;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
 }
 header nav a:hover {
   text-decoration: underline;
 }
 .home-container {
-  margin-bottom: 10rem;
+  margin-bottom: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .home-container h1 {
   font-size: 6rem;
-  margin-top: 10px;
+  margin: 1rem 1rem 2rem;
 }
 .home-container h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0.2rem 1rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
 }
-.about-container {
+.home-container p {
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  margin-left: 2rem;
+}
+#about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  margin-top: 70rem;
+  margin-bottom: 2rem;
 }
-.about-container h1 {
-  font-size: 4rem;
+#about-container h1 {
+  font-size: 6rem;
+  margin: 1rem 1rem 2rem;
 }
-.about-container h2 {
-  font-size: 2rem;
+#about-container h2 {
+  font-size: 3rem;
+  padding: 0.2rem 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
 }
-.about-container figure {
+#about-container figure {
   background-image: url(/img/header-img.png);
   background-repeat: no-repeat;
   background-size: 65%;
@@ -201,26 +217,58 @@ header nav a:hover {
   position: relative;
   margin-left: 10rem;
 }
-.about-container .bio {
+#about-container .bio {
   display: flex;
   flex-direction: row;
   margin: 3rem 3rem 3rem 3rem;
 }
-.about-container .bio-text {
+#about-container .bio-text {
   padding: 1rem;
   font-size: 2rem;
 }
-.projects-container {
+.work-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50rem;
+}
+.work-container .work {
+  padding: 1rem 3rem 1rem 1rem;
+}
+.work-container h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.work-container h6 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.work-container p {
+  font-size: 1.5rem;
+}
+#projects-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50rem;
+}
+#projects-container .project-header {
   width: 100%;
 }
-.projects-container .project-header {
-  background: red;
-  width: 100%;
+#projects-container .project-header h1 {
+  font-size: 6rem;
+  margin: 1rem 1rem 2rem;
 }
-.projects-container .project-items {
+#projects-container .project-header h2 {
+  font-size: 3rem;
+  padding: 0.2rem 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+#projects-container .project-items {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -228,14 +276,18 @@ header nav a:hover {
   margin: 1rem;
   height: 225px;
 }
-.projects-container .project-item {
+#projects-container .project-items .project-item {
   padding: 1rem;
-  border: solid 1px red;
   width: 30%;
-  height: 100px;
 }
-.projects-container img {
+#projects-container .project-items img {
   width: 100%;
+}
+#projects-container .project-items .btn-one:hover {
+  background-color: #428bca;
+}
+#projects-container .project-items .btn-two:hover {
+  background-color: blue;
 }
 .btn-one {
   display: block;
@@ -253,22 +305,27 @@ header nav a:hover {
   color: #fff;
   background: black;
 }
-.contact-container {
+#contact-container {
   width: 100%;
+  margin-bottom: 50rem;
 }
-.contact-container h1 {
-  font-size: 4rem;
+#contact-container h1 {
+  font-size: 6rem;
+  margin: 1rem 1rem 2rem;
 }
-.contact-container h2 {
-  font-size: 2rem;
+#contact-container h2 {
+  font-size: 3rem;
+  padding: 0.2rem 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
 }
-.contact-container .contact-text {
+#contact-container .contact-text {
   font-size: 2rem;
   border: 3px solid black;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
 }
-.contact-container .contact-items {
+#contact-container .contact-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

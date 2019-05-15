@@ -146,6 +146,8 @@ body {
 }
 
 //Variables
+@font-size: 6rem;
+@primary-color: #428bca;
 
 //Mixins
 
@@ -157,14 +159,11 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  // background-color:
 }
 
 .container {
   max-width: 880px;
-  border: 1px solid red;
   height: 100%;
-  // margin: ;
 }
 
 // Start Header
@@ -172,21 +171,20 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 36px 2px 40px;
-  // width: 69%;
+  margin: 3.6rem 1rem 30rem;
 
   nav {
     display: flex;
     justify-content: space-between;
     color: gray;
     font-size: 1.6rem;
-    // width: 69%;
+    position: fixed;
 
     a {
       color: gray;
       text-decoration: none;
       margin: 0rem 1rem;
-      font-size: 1.8rem;
+      font-size: 2.8rem;
     }
 
     a:hover {
@@ -199,35 +197,54 @@ header {
 
 // Start Home Section
 .home-container {
-  margin-bottom: 10rem;
+  margin-bottom: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
 
   h1 {
     font-size: 6rem;
-    margin-top: 10px;
+    margin: 1rem 1rem 2rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 0.2rem 1rem;
     margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+    padding: 0.2rem 1rem;
+    margin-left: 2rem;
+
   }
 }
 
 // End Home Section
 
 //Start About Section
-.about-container {
+#about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  margin-top: 70rem;
+  margin-bottom: 2rem;
 
   h1 {
-    font-size: 4rem;
+    font-size: @font-size;
+    margin: 1rem 1rem 2rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 0.2rem 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
   }
 
   figure {
@@ -254,16 +271,60 @@ header {
 
 //End About Section;;
 
+// Start Work Section
+.work-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50rem;
+
+  .work {
+    padding: 1rem 3rem 1rem 1rem;
+
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h6 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+// End Work Section
+
 // Start Projects Section
-.projects-container {
+#projects-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
+  margin-bottom: 50rem;
+
 
   .project-header {
-    background: red;
     width: 100%;
+
+    h1 {
+      font-size: @font-size;
+      margin: 1rem 1rem 2rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      padding: 0.2rem 1rem;
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+    }
   }
 
   .project-items {
@@ -273,18 +334,23 @@ header {
     width: 100%;
     margin: 1rem;
     height: 225px;
-  }
 
-  .project-item {
-    padding: 1rem;
+    .project-item {
+      padding: 1rem;
+      width: 30%;
+    }
 
-    border: solid 1px red;
-    width: 30%;
-    height: 100px;
-  }
+    img {
+      width: 100%;
+    }
 
-  img {
-    width: 100%;
+    .btn-one:hover {
+      background-color: @primary-color;
+    }
+
+    .btn-two:hover {
+      background-color: blue;
+    }
   }
 }
 
@@ -309,15 +375,21 @@ header {
 // End Projects Section
 
 // Start Contact Section
-.contact-container {
+#contact-container {
   width: 100%;
+  margin-bottom: 50rem;
+
 
   h1 {
-    font-size: 4rem;
+    font-size: @font-size;
+    margin: 1rem 1rem 2rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 0.2rem 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
   }
 
   .contact-text {
