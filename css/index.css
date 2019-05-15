@@ -134,6 +134,9 @@ html,
 body {
   height: 100%;
 }
+.mb {
+  margin-bottom: 50rem;
+}
 html {
   font-size: 62.5%;
 }
@@ -247,13 +250,19 @@ header nav a:hover {
 .work-container p {
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  .work-container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
 #projects-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-bottom: 50rem;
+  margin-bottom: 80rem;
 }
 #projects-container .project-header {
   width: 100%;
@@ -270,8 +279,8 @@ header nav a:hover {
 }
 #projects-container .project-items {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  flex-direction: row;
   width: 100%;
   margin: 1rem;
   height: 225px;
@@ -283,27 +292,33 @@ header nav a:hover {
 #projects-container .project-items img {
   width: 100%;
 }
+#projects-container .project-items .btn-one {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  color: #fff;
+  background: black;
+}
+#projects-container .project-items .btn-two {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  color: #fff;
+  background: black;
+}
 #projects-container .project-items .btn-one:hover {
   background-color: #428bca;
 }
-#projects-container .project-items .btn-two:hover {
+#projects-container .project-items .btn-two:hover:hover {
   background-color: blue;
 }
-.btn-one {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-  color: #fff;
-  background: black;
-}
-.btn-two {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-  color: #fff;
-  background: black;
+@media (max-width: 500px) {
+  #projects-container .project-items {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
 }
 #contact-container {
   width: 100%;
